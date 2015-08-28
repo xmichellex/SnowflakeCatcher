@@ -11,10 +11,10 @@ void mouseDragged()
   //your code here
 }
 
-class SnowFlake
+class Snowflake
 {
   //class member variable declarations
-  SnowFlake()
+  Snowflake()
   {
     //class member variable initializations
   }
