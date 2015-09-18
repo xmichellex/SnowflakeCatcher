@@ -28,6 +28,10 @@ Steps to completing the program (These are just a suggested starting point. Feel
 4. In `mouseDragged()` write some code that draws to the screen. 
 5. When you are happy with your assignment, push your repository to your GitHub account. Submit the url of your working program to the school loop drop box. 
 
+Extensions
+----------
+Your "snow" doesn't have to fall down. You could have bubbles that travel upward or other similar objects. Have fun and be creative.
+
 Samples of Student Work
 -----------------------
 [Chris](http://chrisma1.github.io/SnowflakeCatcher/)  
