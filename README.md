@@ -30,7 +30,7 @@ Steps to completing the program (These are just a suggested starting point. Feel
 
 Extensions
 ----------
-Your "snow" doesn't have to fall down. You could have bubbles that travel upward toward a barrier or some other similar objects. You can keep score based on how many snowflakes have been caught. Have fun and be creative.
+Your "snow" doesn't have to fall down. You could have bubbles that travel upward toward a barrier or some other similar objects. You can keep score based on how many snowflakes have been caught. Have fun and be creative!
 
 Samples of Student Work
 -----------------------
