@@ -1,7 +1,7 @@
 Snowflake Catcher
 ================
 
-In this assignment you will create a class to model a single snowflake. Then you will create an array of many snowflakes.
+In this assignment you will create a class to model a single snowflake. Then you will create an array of many snowflakes. You may find slides 241 - 345 on <a href="https://drive.google.com/open?id=0Bz2ZkT6qWPYTVkF4Q19aZ3dfdk0">apjava1.pptx</a> and the <a href="https://drive.google.com/file/d/0Bz2ZkT6qWPYTZ1FCOTZrWS1pb3M/view?usp=sharing">Arrays of Objects</a> worksheet helpful.
 
 Steps to completing the program (These are just a suggested starting point. Feel free to adjust them anyway you'd like):
 
