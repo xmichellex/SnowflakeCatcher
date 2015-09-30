@@ -1,6 +1,11 @@
 
 body {
     background-color: rgb(200,200,200);
+    background-image: url("http://content.related.com/SiteCollectionImages/Sales%20Site%20Redesign/Viceroy%20Snowmass/Property%20Features/Snowmass-Village.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: rgb(0,0,0);
     font-family: "Open Sans", sans-serif;
     text-align: center;

@@ -1,42 +1,76 @@
+Snowflake [] white; 
+PImage photo; 
 void setup()
 {
-  //your code here
+  size(800, 600);
+  white = new Snowflake [100];
+  for(int i = 0; i < white.length; i++) { 
+    white[i] = new Snowflake(); 
+  }
+
+  photo = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Spring_tree_Victoria_cloudy_day.jpg/800px-Spring_tree_Victoria_cloudy_day.jpg");
+
 }
 void draw()
-{
-  //your code here
+{ 
+  background(0); 
+  image(photo, 0, 0);
+  for(int i = 0; i < white.length; i++) {
+    white[i].erase();
+    white[i].lookDown();
+    white[i].move(); 
+    white[i].wrap();
+    white[i].show();
+  }
 }
 void mouseDragged()
 {
-  //your code here
+
+
 }
 
 class Snowflake
 {
-  //class member variable declarations
+  int x, y;
+  boolean isMoving; 
   Snowflake()
   {
-    //class member variable initializations
+    x = (int)(Math.random() * 800); 
+    y = (int)(Math.random() * 600);
+    isMoving = true; 
   }
   void show()
   {
-    //your code here
+    fill(256, 256, 256); 
+    ellipse(x, y, 5, 5); 
   }
   void lookDown()
   {
-    //your code here
+    if(y < 600 && y > 0 && get(x, y) != color(0)) { 
+      isMoving = false;   
+    }
+    else {
+      isMoving = true; 
+    }
   }
   void erase()
   {
-    //your code here
+    fill(0); 
+    ellipse(x, y, 7, 7); 
   }
   void move()
   {
-    //your code here
+    if(isMoving == true) { 
+      y++;
+    } 
   }
   void wrap()
   {
-    //your code here
+    if(y >= 600) {
+      y = 0; 
+      x = (int)(Math.random() * 800); 
+
+    }
   }
 }
 
