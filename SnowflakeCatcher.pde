@@ -1,5 +1,5 @@
 Snowflake [] white; 
-PImage photo; 
+//PImage photo; 
 void setup()
 {
   size(800, 600);
@@ -8,13 +8,13 @@ void setup()
     white[i] = new Snowflake(); 
   }
 
-  photo = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Spring_tree_Victoria_cloudy_day.jpg/800px-Spring_tree_Victoria_cloudy_day.jpg");
-
+  //photo = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Spring_tree_Victoria_cloudy_day.jpg/800px-Spring_tree_Victoria_cloudy_day.jpg");
+  //image(photo, 0, 0);
 }
 void draw()
 { 
   background(0); 
-  image(photo, 0, 0);
+  //image(photo, 0, 0);
   for(int i = 0; i < white.length; i++) {
     white[i].erase();
     white[i].lookDown();
@@ -23,11 +23,7 @@ void draw()
     white[i].show();
   }
 }
-void mouseDragged()
-{
 
-
-}
 
 class Snowflake
 {
@@ -43,6 +39,8 @@ class Snowflake
   {
     fill(256, 256, 256); 
     ellipse(x, y, 5, 5); 
+    fill(102, 51, 0);
+    arc(mouseX, 550, 150, 100, 0, PI); 
   }
   void lookDown()
   {
