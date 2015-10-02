@@ -6,9 +6,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: repeat-y;
     color: rgb(0,0,0);
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    font-family: Impact, Courier;
 }
 
 #content {

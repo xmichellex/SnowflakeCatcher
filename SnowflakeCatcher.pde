@@ -1,5 +1,5 @@
 Snowflake [] white; 
-//PImage photo; 
+PImage photo; 
 void setup()
 {
   size(800, 600);
@@ -8,19 +8,19 @@ void setup()
     white[i] = new Snowflake(); 
   }
 
-  //photo = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Spring_tree_Victoria_cloudy_day.jpg/800px-Spring_tree_Victoria_cloudy_day.jpg");
-  //image(photo, 0, 0);
+  photo = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Spring_tree_Victoria_cloudy_day.jpg/800px-Spring_tree_Victoria_cloudy_day.jpg");
+
 }
 void draw()
 { 
   background(0); 
-  //image(photo, 0, 0);
+  image(photo, 0, 0);
   for(int i = 0; i < white.length; i++) {
     white[i].erase();
-    white[i].lookDown();
-    white[i].move(); 
-    white[i].wrap();
     white[i].show();
+    white[i].move(); 
+    white[i].lookDown();
+    white[i].wrap();
   }
 }
 
@@ -38,14 +38,14 @@ class Snowflake
   void show()
   {
     fill(256, 256, 256); 
-    ellipse(x, y, 5, 5); 
+    ellipse(x, y, 15, 15); 
     fill(102, 51, 0);
     arc(mouseX, 550, 150, 100, 0, PI); 
   }
   void lookDown()
   {
-    if(y < 600 && y > 0 && get(x, y) != color(0)) { 
-      isMoving = false;   
+    if(y < 600 && y > 0 && get(x, y) == color(102, 51, 0)) { 
+      isMoving = false;  
     }
     else {
       isMoving = true; 
