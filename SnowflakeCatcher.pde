@@ -1,5 +1,5 @@
 Snowflake [] white; 
-PImage photo; 
+
 void setup()
 {
   size(800, 600);
@@ -8,13 +8,12 @@ void setup()
     white[i] = new Snowflake(); 
   }
 
-  photo = loadImage("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Spring_tree_Victoria_cloudy_day.jpg/800px-Spring_tree_Victoria_cloudy_day.jpg");
+ 
 
 }
 void draw()
 { 
   background(0); 
-  image(photo, 0, 0);
   for(int i = 0; i < white.length; i++) {
     white[i].erase();
     white[i].show();
