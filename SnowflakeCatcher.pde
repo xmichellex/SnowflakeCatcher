@@ -58,7 +58,7 @@ class Snowflake
     //basket
     noStroke(); 
     fill(102, 51, 0);
-    arc(mouseX, 450, 150, 100, 0, PI); 
+    rect(mouseX, 470, 30, 30); 
   }
 
   void revive()
@@ -71,7 +71,7 @@ class Snowflake
   }
   void move()
   {
-    frameRate(30); 
+
     if(isMoving == true) { 
       y++;
     } 
