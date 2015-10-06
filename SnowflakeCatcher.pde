@@ -3,7 +3,7 @@ Snowflake [] white;
 void setup()
 {
   size(500, 500);
-  white = new Snowflake [70];
+  white = new Snowflake [30];
   for(int i = 0; i < white.length; i++) { 
     white[i] = new Snowflake(); 
   }
